@@ -3,6 +3,7 @@ package main
 import (
 	"Demo/tools"
 	"fmt"
+	"rsc.io/quote"
 	"strconv"
 )
 
@@ -15,6 +16,9 @@ type Player struct {
 }
 
 func main() {
+
+	fmt.Println(quote.Go())
+
 	snakes, ladders := tools.GenerateSnakesAndLadders()
 
 	var playerCount int
